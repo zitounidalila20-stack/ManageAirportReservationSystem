@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@react-oauth/google": "^0.13.5",
+    "axios": "^1.15.0",
+    "jwt-decode": "^4.0.0"
+  }
+}
