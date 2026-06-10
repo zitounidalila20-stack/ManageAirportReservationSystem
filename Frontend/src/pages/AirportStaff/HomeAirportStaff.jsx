@@ -30,7 +30,6 @@ export default function EmployeeDashboard() {
       <main className="flex-1 w-full pl-76 pr-6 md:pr-10 pt-24 pb-12 overflow-x-hidden">
         <div className="max-w-6xl mx-auto space-y-6">
           
-          {/* هيدر الترحيب بالموظف وحالة الشفت */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-5">
             <div>
               <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-900">
@@ -45,7 +44,7 @@ export default function EmployeeDashboard() {
             </div>
           </div>
 
-          {/* نوتيفكيشن النجاح عند إتمام أي عملية */}
+       
           {alertMessage && (
             <div className="p-4 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-2xl text-sm flex items-center gap-2.5 shadow-sm animate-fade-in">
               <CheckCircle size={18} className="text-emerald-600 shrink-0" />
@@ -53,12 +52,8 @@ export default function EmployeeDashboard() {
             </div>
           )}
 
-          {/* ------------------------------------------------------------- */}
-          {/* الجزء الأول: شبكة كروت العمليات التكتيكية (3 وظائف رئيسية بجانب بعضها) */}
-          {/* ------------------------------------------------------------- */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
             
-            {/* الكارت 1: الحجز الفوري للمسافر القادم (Walk-in Passenger Booking) */}
             <div className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm space-y-4">
               <div className="flex items-center gap-2 pb-2 border-b border-slate-100">
                 <div className="p-2 bg-blue-50 text-blue-600 rounded-xl"><CalendarCheck size={18} /></div>
@@ -89,7 +84,7 @@ export default function EmployeeDashboard() {
                 <button 
                   onClick={() => {
                     if(!passport || !targetFlight) return alert("Please fill all booking fields");
-                    triggerAlert(`🎯 Ticket issued successfully for passport [${passport}] on flight [${targetFlight}]!`);
+                    triggerAlert(` Ticket issued successfully for passport [${passport}] on flight [${targetFlight}]!`);
                     setPassport(""); setTargetFlight("");
                   }}
                   className="w-full py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-xs transition active:scale-95 shadow-sm shadow-blue-500/10"
@@ -99,7 +94,6 @@ export default function EmployeeDashboard() {
               </div>
             </div>
 
-            {/* الكارت 2: توجيه بوابات وممرات الطائرات (Gate & Runway Logistics) */}
             <div className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm space-y-4">
               <div className="flex items-center gap-2 pb-2 border-b border-slate-100">
                 <div className="p-2 bg-indigo-50 text-indigo-600 rounded-xl"><Plane size={18} /></div>
@@ -118,7 +112,6 @@ export default function EmployeeDashboard() {
                   />
                 </div>
                 
-                {/* حقول مزدوجة متناسقة تماماً */}
                 <div className="grid grid-cols-2 gap-2">
                   <div>
                     <label className="block text-[11px] font-bold text-slate-500 uppercase mb-1">Assign Gate</label>
@@ -161,7 +154,6 @@ export default function EmployeeDashboard() {
               </div>
             </div>
 
-            {/* الكارت 3: مركز بث الإشعارات الجماعية والتحذيرات (Broadcast Notification) */}
             <div className="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm space-y-4">
               <div className="flex items-center gap-2 pb-2 border-b border-slate-100">
                 <div className="p-2 bg-amber-50 text-amber-600 rounded-xl"><Send size={18} /></div>
@@ -194,7 +186,7 @@ export default function EmployeeDashboard() {
                 <button 
                   onClick={() => {
                     if(!notifMessage) return alert("Notification body cannot be blank");
-                    triggerAlert(`📣 Broadcast successfully transmitted to [Target: ${notifTarget}]!`);
+                    triggerAlert(` Broadcast successfully transmitted to [Target: ${notifTarget}]!`);
                     setNotifMessage("");
                   }}
                   className="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-white rounded-xl font-bold text-xs transition active:scale-95 shadow-sm shadow-amber-500/10"
@@ -206,9 +198,6 @@ export default function EmployeeDashboard() {
 
           </div>
 
-          {/* ------------------------------------------------------------- */}
-          {/* الجزء الثاني: جدول تتبع حالة البوابات الحالية لملء الفراغ بشكل رائع */}
-          {/* ------------------------------------------------------------- */}
           <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
             <div className="p-5 border-b border-slate-100 flex items-center justify-between">
               <div>
