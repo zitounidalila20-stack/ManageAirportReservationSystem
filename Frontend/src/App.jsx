@@ -1,7 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import NavBar from "./components/Passenger/NavigationBar.jsx";
 import Home from "./pages/Passenger/Home.jsx";
-import AuthPage from "./pages/Authpage";
+import AuthPage from "./pages/authpage";
 import BookingFunctionResults from "./pages/Passenger/Bookingsearchresults.jsx";
 import BookingInformation from "./pages/Passenger/Bookdetails.jsx";
 import SelectSeat from "./components/Passenger/seats.jsx";
