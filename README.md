@@ -29,4 +29,4 @@ JWT Authentication
 PDFKit
 Stripe API
 
-This project was developed as part of the requirements for obtaining a Bachelor's degree in Computer Science
+This project was developed as part of the requirements for obtaining a Bachelor's degree in Computer Science.
