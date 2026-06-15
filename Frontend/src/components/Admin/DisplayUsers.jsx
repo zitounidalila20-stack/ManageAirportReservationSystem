@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect, useMemo } from "react";
-import UsersTable from "./UsersTable";
+import UsersTable from "./usersTable";
 import StatusPopup from "../generalcompenents/StatusPopup";
 
 export default function DisplayUsers() {
