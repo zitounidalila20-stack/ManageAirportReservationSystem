@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 
 import AdminSidebar from "../../components/Admin/SideBarMenu";
-import KPIkeys from "../../components/Admin/KPIkey";
+import KPIkeys from "../../components/Admin/KpiKey";
 import DestinationChart from "../../components/Admin/Charts/FlightByDestination";
 import FlightStatusBarChart from "../../components/Admin/Charts/FlightStatusBarChar";
 import RevenueChart from "../../components/Admin/Charts/RevenueChart";
